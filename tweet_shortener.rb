@@ -35,7 +35,7 @@ end
 
 def selective_tweet_truncator
   if tweet_array > 137 characters
-    t
+    tweet_array << "..."
 
 
 
