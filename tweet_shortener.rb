@@ -27,9 +27,15 @@ new_tweet = tweet_array.join(" ")
 new_tweet
 end
 
+
 def bulk_tweet_shortener(tweet_arrays)
   tweet_arrays.each{|tweet_array| puts word_substituter(tweet_array)}
+  puts bulk_tweet_shortener
 end
   
 
-  
+
+
+
+
+
