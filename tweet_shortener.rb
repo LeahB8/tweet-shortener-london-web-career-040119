@@ -34,9 +34,8 @@ end
   
 
 def selective_tweet_truncator
-  if new_tweet > 137 characters
-    new_tweet
-
+  if tweet_array > 137 characters
+    t
 
 
 
