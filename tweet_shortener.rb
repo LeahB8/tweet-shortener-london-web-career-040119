@@ -17,8 +17,8 @@ end
 def word_substituter(tweet_string)
   tweet_array = tweet_string.split(" ")
   tweet_array.each_with_index do |word, index|
-    substituted_words.each_key do |word|
-      if tweet_array.inlcude?(word)
+    dictionary.each do |unsub_word, sub_word|
+      if word.downcase == unsub_word
         tweet_array[index].gsub!(word, substituted_words[word])
         tweet_array.join(" ")
     end
