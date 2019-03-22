@@ -28,7 +28,7 @@ new_tweet
 end
 
 def bulk_tweet_shortener(tweet_arrays)
-  tweet_arrays.each{|tweet_array| puts substituted_words(tweet_array)}
+  tweet_arrays.each{|tweet_array| puts substituted_dwors(tweet_array)}
 end
   
   
