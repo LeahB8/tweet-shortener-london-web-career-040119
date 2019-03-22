@@ -34,10 +34,10 @@ end
   
 
 def selective_tweet_shortener(tweet_string)
-  if tweet_array.length > 140
-    new_tweet = word_substituter(tweet_array)
+  if tweet_string.length > 140
+    new_tweet = word_substituter(tweet_string)
   else
-    new_tweet = tweet_array
+    new_tweet = tweet_string
   end
   new_tweet
 end
