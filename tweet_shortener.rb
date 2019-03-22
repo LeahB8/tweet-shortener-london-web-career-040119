@@ -19,8 +19,10 @@ def word_substituter(tweet_string)
   tweet_array.each_with_index do |word, index|
     dictionary.each do |unsub_word, sub_word|
       if word.downcase == unsub_word
-        tweet_array[index].gsub!(word, substituted_words[word])
-        tweet_array.join(" ")
+        tweet_array[index] = sub_word
     end
   end
+end
+new_tweet = tweet_array.join(" ")
+new_tweet
 end
