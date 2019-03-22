@@ -34,9 +34,8 @@ end
   
 
 def selective_tweet_truncator
-  if tweet_array > [137]
-    tweet_array.delete 
-    tweet_array << "..."
+  if tweet_array.length > 140
+    new_tweet = word_substituter()
   else
     
 
