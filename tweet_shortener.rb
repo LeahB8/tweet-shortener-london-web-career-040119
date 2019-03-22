@@ -44,10 +44,13 @@ end
     
     
 def shortened_tweet_truncator(tweet_string)
-  if tweet_string.length > 137
-    tweet_string.delete[137]
-    new_tweet << "..."
+  untrunc_tweet = word_substituter(tweet_string)
+  if untrunc_tweet.length > 140
+    new_tweet = untrunc_tweet.slice(0..136).concat("...")
   else
-    new_tweet = tweet_string
+    new_tweet = untrunc_tweet
+  end
+  new_tweet
+end
 
 
