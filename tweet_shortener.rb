@@ -26,3 +26,10 @@ end
 new_tweet = tweet_array.join(" ")
 new_tweet
 end
+
+def bulk_tweet_shortener(array_of_tweets)
+  
+  
+  
+  
+  
