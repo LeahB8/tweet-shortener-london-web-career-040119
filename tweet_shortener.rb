@@ -29,7 +29,6 @@ end
 
 def bulk_tweet_shortener(tweet_arrays)
   tweet_arrays.each{|og_tweet| puts substituted_words(tweet_array)}
-
 end
   
   
