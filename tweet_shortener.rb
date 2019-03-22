@@ -15,11 +15,10 @@ def dictionary
 end
 
 def word_substituter(tweet_string)
-  tweet_array = []
-  tweet_array << tweet_string.split(", ")
-  tweet_array.each_with_index do |tweet_string, index|
+  tweet_array = tweet_string.split(", ")
+  tweet_array.each_with_index do |tweet_array, index|
     substituted_words.each_key do |word|
-      if tweet_string.inlcude?(word)
+      if tweet_array.inlcude?(word)
         tweet_array[index].gsub!(word, substituted_words[word])
         tweet_array.join(" ")
     end
