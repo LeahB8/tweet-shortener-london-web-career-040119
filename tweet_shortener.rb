@@ -33,7 +33,8 @@ def bulk_tweet_shortener(tweet_arrays)
 end
   
 
-
+def selective_tweet_truncator
+  
 
 
 
