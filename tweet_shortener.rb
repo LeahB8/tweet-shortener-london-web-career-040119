@@ -43,7 +43,7 @@ def selective_tweet_shortener(tweet_string)
 end
     
     
-def shortened_tweet_truncator
+def shortened_tweet_truncator(tweet_string)
   if tweet_string.length > 137
     new_tweet.delete[137..x]
     new_tweet << "..."
